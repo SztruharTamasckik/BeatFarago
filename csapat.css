@@ -1,0 +1,47 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-image: url(images/csapatBg.png);
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(29, 29, 29, 0.6);
+    padding: 1em;
+    border-radius: 20px;
+    color: rgb(175, 175, 175);
+    margin-left: 5%;
+    width: 90%;
+}
+
+header b {
+    font-size: 1.5em;
+}
+
+header ul li{
+    display: inline;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 7em;
+    text-align: center;
+    color: white;
+    text-decoration: line-through;
+    text-decoration-thickness: 15px;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+main {
+    background-color: rgba(29, 29, 29, 0.6);
+    padding: 1em;
+    border-radius: 20px;
+    color: rgb(175, 175, 175);
+    margin-top: 8px;
+    margin: 5%;
+    width: 90%;
+}
+
+#ido {
+    font-size: 6em;
+    text-align: center;
+}
