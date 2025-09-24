@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
     <title>ToDo Lista | BeatFaragók</title>
 </head>
 <body>
     <header>
         <ul>
-            <li>BeatFaragók</li>
+            <li><b>BeatFaragók</b></li>
             <li>További oldalaink:</li>
             <li><a href="index.html">Főoldal</a></li>
             <li><a href="csapat.html">Csapat</a></li>
         </ul>
     </header>
+    
+    <h1>BeatFaragók</h1>
+    
     <main>
         <section>
-         
+            <div id="todo1">
+                <h2>ToDo Lista</h2>
+                <div id="inputBox">
+                    <input type="text" id="input" placeholder="Írd ide a lista elemét">
+                    <button id="btn">+</button>
+                </div>
+            </div>
+
+            <div id="todo2">
+                <h2>Eddigi elemek</h2>
+                <div id="list"></div>
+            </div>
+
         </section>
+    <script src="todo.js"></script>    
     </main>
 </body>
 </html>
