@@ -5,16 +5,33 @@ function ToDo() {
 
     button.addEventListener('click', () => {
       const task = input.value.trim();
-    //   if (task === "") return;
+      if (task === "") return;
 
       const div = document.createElement('div');
       div.classList.add('item');
-      div.textContent = task;
-
       container.appendChild(div);
+      
+      const span = document.createElement('span')
+      span.classList.add('text')
+      span.textContent = task;
+      div.appendChild(span)
+      
+      const removeButton = document.createElement('div');
+      removeButton.classList.add('remove');
+      removeButton.textContent = '-';
+      div.appendChild(removeButton)
+
+      removeButton.addEventListener('click', function(e) {
+        this.closest('.item').remove();
+        //e.target.parentNode.remove()
+      });
 
       input.value = "";
       });
+
+}
+function createListItem() {
+
 }
 
 ToDo();

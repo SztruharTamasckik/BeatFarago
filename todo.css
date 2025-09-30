@@ -73,12 +73,7 @@ h2 {
     margin-bottom: 5%;
 }
 
-.item {
-    display: flex;
-    align-items: center;
-    padding-left: 5%;
-    color: rgb(67, 67, 67);
-}
+
 
 #input {
     width: 75%;
@@ -96,4 +91,39 @@ h2 {
     height: 30%;
     border-radius: 25px;
     color: white;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    padding-left: 5%;
+    color: rgb(67, 67, 67);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.text {
+    grid-column: 2;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.remove {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 25%;
+    border-radius: 25px;
+    background-color: red;
+    grid-column: 3;
+    justify-self: end;
+    justify-content: center;
 }
