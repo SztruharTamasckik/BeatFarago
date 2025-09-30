@@ -62,17 +62,17 @@ h2 {
     text-align: center;
 }
 
-#kepek {
+.kepek {
     display: flex;
 }
 
-#kepek div {
+.kepek div {
     display: block;
     width: calc(100%/3);
     text-align: center;
 }
 
-#kepek p {
+.kepek p {
     font-size: 1.3em;
     font-weight: bold;
     background-color: rgb(216, 66, 176);
@@ -92,3 +92,8 @@ img {
 #kera, #aram, #lamas {
     display: none;
 }
+
+#galery1, #galery2, #galery3, #galery4, #galery5, #galery6, #galery7, #galery8, #galery9, #galery10, #galery11, #galery12, #galery13, #galery14, #galery15, #galery16, #galery17, #galery18, #galery19, #galery20{
+    display: none;
+}
+
