@@ -96,11 +96,20 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    padding-left: 5%;
     color: rgb(67, 67, 67);
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.checkbox {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    width: 50%;
+    height: 25%;
+    justify-self: start;
+    justify-content: center;
+    accent-color: green;
 }
 .text {
     grid-column: 2;
