@@ -19,6 +19,11 @@ function addTask() {
 function ToDo() {
   const button = document.getElementById('btn');
   button.addEventListener('click', addTask);
+  
+  const inputBox = document.getElementById('inputBox');
+  inputBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') addTask();
+  });
 }
 
 
@@ -91,6 +96,9 @@ function renderTasks() {
 
     moveUp.addEventListener('click', () => moveTaskUp(index));
     moveDown.addEventListener('click', () => moveTaskDown(index));
+
+
+    
     
     
     container.appendChild(div);
